@@ -84,6 +84,7 @@ button{
     text-transform:uppercase;
     transition:.3s;
     margin-bottom:20px;
+
 }
 
 button:hover{
@@ -101,5 +102,5 @@ button:hover{
 
 .forgot:hover,
 .signup:hover{
-    color:#c50000;
+    color:#cd1616;
 }
