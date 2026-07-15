@@ -1,0 +1,198 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#fbf7ec;
+    color:#222;
+}
+
+.hero{
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:70px 10%;
+    overflow:hidden;
+}
+
+/* Left Side */
+
+.left{
+    max-width:520px;
+}
+
+.logo{
+    color:#ff6262;
+    font-weight:700;
+    letter-spacing:3px;
+    font-size:30px;
+}
+
+.left h1{
+    font-size:65px;
+    line-height:1.1;
+    margin:120px 0 25px;
+    font-weight:700;
+}
+
+.left p{
+    color:#777;
+    font-size:18px;
+    line-height:1.7;
+    margin-bottom:35px;
+}
+
+.btn{
+    display:inline-block;
+    background:linear-gradient(90deg,#ff6b6b,#ff5a7d);
+    color:#fff;
+    text-decoration:none;
+    padding:16px 35px;
+    border-radius:40px;
+    font-weight:600;
+    box-shadow:0 10px 25px rgba(255,90,125,.3);
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-4px);
+}
+
+/* Right Side */
+
+.right{
+    position:relative;
+    width:520px;
+    height:520px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.circle{
+    position:absolute;
+    width:280px;
+    height:280px;
+    background:#ffd25d;
+    border-radius:50%;
+    right:40px;
+    top:50px;
+}
+
+.card{
+    position:relative;
+    width:350px;
+    height:350px;
+    background:#ffc928;
+    border-radius:20px;
+    overflow:visible;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    box-shadow:0 20px 40px rgba(0,0,0,.12);
+}
+
+.card img{
+    width:320px;
+    object-fit:contain;
+}
+
+/* Price */
+
+.price{
+    position:absolute;
+    top:-20px;
+    left:-20px;
+    background:#222;
+    color:#fff;
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-weight:600;
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+/* Review */
+
+.review{
+    position:absolute;
+    bottom:-20px;
+    right:-30px;
+    background:#fff;
+    border-radius:12px;
+    padding:14px 18px;
+    display:flex;
+    align-items:center;
+    gap:12px;
+    box-shadow:0 15px 30px rgba(0,0,0,.12);
+}
+
+.stars{
+    color:#f5b400;
+    font-size:14px;
+}
+
+.review span{
+    font-size:15px;
+    color:#555;
+    font-weight:500;
+}
+
+/* Responsive */
+
+@media(max-width:992px){
+
+.hero{
+    flex-direction:column;
+    text-align:center;
+    gap:60px;
+}
+
+.left h1{
+    margin-top:50px;
+    font-size:50px;
+}
+
+.right{
+    width:100%;
+}
+
+}
+
+@media(max-width:600px){
+
+.left h1{
+    font-size:40px;
+}
+
+.left p{
+    font-size:16px;
+}
+
+.card{
+    width:290px;
+    height:290px;
+}
+
+.card img{
+    width:260px;
+}
+
+.circle{
+    width:220px;
+    height:220px;
+}
+
+.review{
+    transform:scale(.9);
+}
+
+}
