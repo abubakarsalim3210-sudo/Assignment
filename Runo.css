@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    height: 80px;
+    background: grey;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    padding: 30px 70px;
+}
+
+.logo span{
+    font-weight: 700;
+    font-family: "League Spartan", sans-serif;
+    font-size: 20px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.navigation i{
+    font-size: 20px;
+}
+.navigation a{
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    font-size:  12px; ;
+    margin-left: 25px;
+}
+
+.navbar span{
+    margin-left: 17px;
+}
+
+.hero-section{
+   background: url(./asset/hero.png);
+   height: 600px;
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
